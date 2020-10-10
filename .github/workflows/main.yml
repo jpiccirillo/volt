@@ -15,11 +15,7 @@ jobs:
           npm install
           npm run build
           ls -la
-          
-      - name: Switch into volt
-        run: |
-          ls -la
-          cd volt
+          cd ../
           ls -la
   
       - name: Deploy 🚀
