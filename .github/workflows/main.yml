@@ -15,8 +15,11 @@ jobs:
           npm install
           npm run build
           
-      - name: Debug
-        run: ls -la
+      - name: Switch into volt
+        run: |
+          ls -la
+          cd volt
+          ls -la
   
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.2
