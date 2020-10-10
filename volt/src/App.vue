@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    {{ env }}
   </div>
 </template>
 
 <script>
 export default {
   name: "App",
-  created() {
-    console.log(process.env.VUE_APP_FIREBASE_AUTH_TOKEN);
+  data() {
+    return {
+      env: process.env,
+    };
   },
 };
 </script>
